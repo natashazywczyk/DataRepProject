@@ -1,5 +1,11 @@
-import logo from './logo.svg';
+//Import all necessary routes to be accessed from navigation bar
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import EditList from './components/EditList';
+import AddItem from './components/AddItem';
+import Main from './components/Main';
+
 
 function App() {
   return (

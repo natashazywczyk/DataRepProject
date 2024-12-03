@@ -34,3 +34,8 @@ const listSchema = new mongoose.Schema({
 //Object to represent Database
 //Generate model based schema
 const listModel = new mongoose.model('myWishes', listSchema);
+
+//Only run on specified port when running
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});

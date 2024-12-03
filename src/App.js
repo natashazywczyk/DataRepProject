@@ -6,6 +6,7 @@ import EditList from './components/EditList';
 import AddItem from './components/AddItem';
 import Main from './components/Main';
 import Home from './components/Home';
+import Ideas from './components/Ideas';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           {/*Different clickable routes*/}
           <Route path = "/" element = {<Home />} />
+          <Route path = "/ideas" element = {<Ideas />} />
           <Route path = "/main" element = {<Main />} />
           <Route path = "/additem" element = {<AddItem />}/>
         </Routes>

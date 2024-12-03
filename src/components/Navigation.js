@@ -12,8 +12,8 @@ const Navigation = () => {
                 <Navbar.Brand href="/">Navbar</Navbar.Brand>
                 <Nav className="me-auto">
                     {/*Different links*/}
-                    <Nav.Link href="/home">Home</Nav.Link>
-                    <Nav.Link href="/additem">Add Item</Nav.Link>
+                    <Nav.Link href="/ideas">Ideas</Nav.Link>
+                    <Nav.Link href="/additem">Add Wish</Nav.Link>
                     <Nav.Link href="/main">Main Page</Nav.Link>
                 </Nav>
             </Container>

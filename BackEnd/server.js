@@ -2,3 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 4000; //make localhost port 4000
+
+//Database Server Connection String
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://admin:admin@cluster0.n2bkl.mongodb.net/MyMovieDB');

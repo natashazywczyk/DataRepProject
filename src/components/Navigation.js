@@ -4,10 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-const Navigation = () => 
-{
-    return 
-    (
+const Navigation = () => {
+    return (
         //Updates URL depending on what link the user clicks
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
@@ -21,6 +19,6 @@ const Navigation = () =>
             </Container>
         </Navbar>
     );
-}
+};
 
 export default Navigation;

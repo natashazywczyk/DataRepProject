@@ -15,7 +15,7 @@ function App() {
         <Navigation />
         <Routes>
           {/*Different clickable routes*/}
-          <Route path = "/home" element = {<Home />} />
+          <Route path = "/" element = {<Home />} />
           <Route path = "/main" element = {<Main />} />
           <Route path = "/additem" element = {<AddItem />}/>
         </Routes>

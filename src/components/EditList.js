@@ -13,9 +13,9 @@ export default function EditList(props) {
     const [desc, setDescription] = useState("");
     const navigate = useNavigate(); //Allows navigation to other roots
 
-    //Do when movie id changes
+    //Do when wish id changes
     useEffect(() => {
-        //GETS movie from id given
+        //GETS wish from id given
         axios.get('http://localhost:4000/api/wishes/' + id)
             .then((response) => {
                 setTitle(response.data.title);

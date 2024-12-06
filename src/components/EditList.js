@@ -29,5 +29,44 @@ export default function EditList(props) {
         });
     }
     
-
+    
+//Display the movie information
+return (
+    <div>
+        <h3>Edit a wish on your bucket list</h3>
+        <form onSubmit={handleSubmit}>
+            <div className="form-group">
+                <label>Wish Title: </label>
+                <input type="text" 
+                className="form-control" 
+                value={title} 
+                onChange={(e) => setTitle(e.target.value)} />
+            </div>
+            <div className="form-group">
+                <label>Date Added: </label>
+                <input type="text" 
+                className="form-control" 
+                value={dateAdd} 
+                onChange={(e) => setDateAdd(e.target.value)} />
+            </div>
+            <div className="form-group">
+                <label>Description: </label>
+                <input type="text" 
+                className="form-control" 
+                value={desc} 
+                onChange={(e) => setDescription(e.target.value)} />
+            </div>
+            <div className="form-group">
+                <label>Picture URL: </label>
+                <input type="text" 
+                className="form-control" 
+                value={picture} 
+                onChange={(e) => setPicture(e.target.value)} />
+            </div>
+            <div className="form-group">
+                <input type="submit" value="Edit Wish" className="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+);
 }

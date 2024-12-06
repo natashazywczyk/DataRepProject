@@ -6,7 +6,7 @@ function Items(props) {
         <>
             {props.mywishes.map((wish) => (
                 <ListItem
-                    myMovie={wish}
+                    mywishes={wish}
                     key={wish._id}
                     Reload={props.ReloadData} //handles reload function
                 />

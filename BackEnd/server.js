@@ -36,7 +36,7 @@ const listSchema = new mongoose.Schema({
 const listModel = new mongoose.model('mywishes', listSchema);
 
 //Find all wishes in database
-app.get('/api/movies', async (req, res) => {
+app.get('/api/wishes', async (req, res) => {
     const wishes = await listModel.find({});
 
     res.status(200).json({wishes})
@@ -52,6 +52,7 @@ app.post('/api/wishes', async (req, res)=>{
    
     res.status(201).json({ message: 'Wish created successfully', wish: newWish });
 })
+
 
 //Search for a particular wish ID
 app.get('/api/wishes/:id', async(req, res) =>

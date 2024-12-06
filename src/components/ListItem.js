@@ -20,7 +20,7 @@ const ListItem = (props) =>
                 <footer>{props.mywishes.dateAdd}</footer>
                 <p>{props.mywishes.desc}</p>
               </blockquote>
-            </Card.Body>
+            </Card.Body>      
           </Card>
         </div>
       );

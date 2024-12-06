@@ -9,7 +9,7 @@ const ListItem = (props) =>
 {
     useEffect(() => {
         console.log("Bucket List Item:", props.mywishes);
-      }, [props.mywishes]); // Only run this effect when the myList prop changes
+    }, [props.mywishes]); // Only run this effect when the myList prop changes
       
     return (
         <div>

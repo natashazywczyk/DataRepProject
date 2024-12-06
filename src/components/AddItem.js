@@ -13,7 +13,7 @@ const AddItem = () => {
         const wish = {title, dateAdd, picture, desc};
         console.log(wish);
 
-        axios.post('http://localhost:4000/api/mywishes', wish)
+        axios.post('http://localhost:4000/api/wishes', wish)
         .then((res) => console.log(res.data))
         .catch((err) => console.log(err.data));
     }

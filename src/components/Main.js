@@ -4,8 +4,33 @@ import axios from "axios";
 
 const Main = () =>
 {
-    //Have this page read in bucklet list items from api 
-    //and reload page whenever an item is deleted
+    const [wishes, setWishes] = useState([]);
+
+    //Reload function that allows page to instantly refresh when movie deleted
+    const reloadData = () => 
+    {
+      axios.get('http://localhost:4000/api/wishes') //get api server
+      .then((response) => {
+        console.log(response.data);
+        setWishes(response.data.movies); //display movie items
+      })
+      .catch((error) => {
+        console.log(error); //handle error displaying movies
+      })
+    }
+
+    //Reload when used
+    useEffect(() => {
+        reloadData();
+    },[]);
+
+    return(
+        <div>
+            <h3>View your wishes below</h3>
+
+            <Items mywishes={wishes} ReloadData = {reloadData} /> {/*reload page when item deleted */}
+        </div>
+    );
 }
 
 export default Main;

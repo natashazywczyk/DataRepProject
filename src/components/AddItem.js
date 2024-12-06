@@ -10,7 +10,7 @@ const AddItem = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const wish = {title,year,picture, desc};
+        const wish = {title, dateAdd, picture, desc};
         console.log(wish);
 
         axios.post('http://localhost:4000/api/mywishes', wish)

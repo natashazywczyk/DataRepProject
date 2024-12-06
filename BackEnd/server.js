@@ -35,6 +35,13 @@ const listSchema = new mongoose.Schema({
 //Generate model based schema
 const listModel = new mongoose.model('mywishes', listSchema);
 
+//Find all wishes in database
+app.get('/api/movies', async (req, res) => {
+    const wishes = await listModel.find({});
+
+    res.status(200).json({wishes})
+});
+
 //Push wish data to database
 app.post('/api/wishes', async (req, res)=>{
 

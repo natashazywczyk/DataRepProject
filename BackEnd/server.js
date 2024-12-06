@@ -33,7 +33,7 @@ const listSchema = new mongoose.Schema({
 
 //Object to represent Database
 //Generate model based schema
-const listModel = new mongoose.model('myWishes', listSchema);
+const listModel = new mongoose.model('mywishes', listSchema);
 
 //Only run on specified port when running
 app.listen(port, () => {

@@ -12,10 +12,10 @@ const Main = () =>
       axios.get('http://localhost:4000/api/wishes') //get api server
       .then((response) => {
         console.log(response.data);
-        setWishes(response.data.movies); //display movie items
+        setWishes(response.data.wishes); //display wish items
       })
       .catch((error) => {
-        console.log(error); //handle error displaying movies
+        console.log(error); //handle error displaying bucket list
       })
     }
 

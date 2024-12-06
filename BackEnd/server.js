@@ -35,6 +35,17 @@ const listSchema = new mongoose.Schema({
 //Generate model based schema
 const listModel = new mongoose.model('mywishes', listSchema);
 
+//Push wish data to database
+app.post('/api/wishes', async (req, res)=>{
+
+    const { title, dateAdd, desc, picture } = req.body;
+   
+    const newWish = new listModel({ title, dateAdd, desc, picture });
+    await newWish.save(); //wait until last process is finished
+   
+    res.status(201).json({ message: 'Wish created successfully', wish: newWish });
+})
+
 //Only run on specified port when running
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

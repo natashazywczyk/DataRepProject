@@ -5,7 +5,7 @@ import axios from "axios";
 import Button from 'react-bootstrap/Button';
 
 
-const ListItem = () => 
+const ListItem = (props) => 
 {
     useEffect(() => {
         console.log("Bucket List Item:", props.mywishes);

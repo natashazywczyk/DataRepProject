@@ -34,6 +34,7 @@ const ListItem = (props) =>
                 <img src={props.mywishes.picture} alt={props.mywishes.title} />
                 <footer>{props.mywishes.dateAdd}</footer>
                 <p>{props.mywishes.desc}</p>
+                <Button className = "btn btn-danger" onClick = {handleDelete}>Delete</Button> {/*Delete item using delete handler function when button clicked*/}
               </blockquote>
             </Card.Body>      
           </Card>

@@ -53,6 +53,13 @@ app.post('/api/wishes', async (req, res)=>{
     res.status(201).json({ message: 'Wish created successfully', wish: newWish });
 })
 
+//Search for a particular wish ID
+app.get('/api/movies/:id', async(req, res) =>
+{
+    const wish = await listModel.findById(req.params.id); // Searches for id given by user
+    res.json(wish);
+})
+
 //Only run on specified port when running
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

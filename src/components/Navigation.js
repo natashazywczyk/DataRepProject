@@ -15,6 +15,7 @@ const Navigation = () => {
                     <Nav.Link href="/ideas">Ideas</Nav.Link>
                     <Nav.Link href="/additem">Add Wish</Nav.Link>
                     <Nav.Link href="/main">Main Page</Nav.Link>
+                    <Nav.Link href="/editlist">Edit Page</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

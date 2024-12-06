@@ -54,7 +54,7 @@ app.post('/api/wishes', async (req, res)=>{
 })
 
 //Search for a particular wish ID
-app.get('/api/movies/:id', async(req, res) =>
+app.get('/api/wishes/:id', async(req, res) =>
 {
     const wish = await listModel.findById(req.params.id); // Searches for id given by user
     res.json(wish);

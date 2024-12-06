@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
 //Import functions and hooks
-export default function Edit(props) {
+export default function EditList(props) {
     let { id } = useParams();
     const [title, setTitle] = useState("");
     const [dateAdd, setDateAdd] = useState("");

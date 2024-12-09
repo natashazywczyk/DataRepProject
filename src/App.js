@@ -20,7 +20,7 @@ function App() {
           <Route path = "/ideas" element = {<Ideas />} />
           <Route path = "/main" element = {<Main />} />
           <Route path = "/additem" element = {<AddItem />}/>
-          <Route path = "/editlist" element = {<EditList />}/>
+          <Route path = "/editlist/:id" element = {<EditList />}/>
         </Routes>
       </Router> 
     </div>

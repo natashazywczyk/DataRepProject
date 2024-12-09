@@ -68,6 +68,14 @@ app.put('/api/wishes/:id', async (req, res) => {
     res.send(wish);
 })
 
+//Handles the wish deletion, server side
+app.delete('/api/wishes/:id', async (req, res) =>
+{
+    console.log('Deleting wish, ID: ', req.params.id);
+    const wish = await listModel.findByIdAndDelete(req.params.id); //wait until the id of wish is found
+    res.status(200).send({ message: "Wish successfully deleted", wish}); //tell user if deletion was successful
+});
+
 //Only run on specified port when running
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

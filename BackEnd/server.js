@@ -53,12 +53,19 @@ app.post('/api/wishes', async (req, res)=>{
     res.status(201).json({ message: 'Wish created successfully', wish: newWish });
 })
 
-
 //Search for a particular wish ID
 app.get('/api/wishes/:id', async(req, res) =>
 {
     const wish = await listModel.findById(req.params.id); // Searches for id given by user
     res.json(wish);
+})
+
+//Find wish from id and update it, creating a new, updated wish is displayed
+app.put('/api/wishes/:id', async (req, res) => {
+    let wish = await listModel.findByIdAndUpdate(req.params.id, req.body, {new:true})
+
+    //Send edited wish
+    res.send(wish);
 })
 
 //Only run on specified port when running

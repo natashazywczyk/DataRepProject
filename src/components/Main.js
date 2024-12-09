@@ -27,6 +27,7 @@ const Main = () =>
     return(
         <div>
             <h3>View your wishes below</h3>
+            
 
             <Items mywishes={wishes} ReloadData = {reloadData} /> {/*reload page when item deleted */}
         </div>

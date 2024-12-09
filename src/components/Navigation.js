@@ -29,7 +29,7 @@ const Navigation = () => {
         <div className={darkTheme ? 'bg-dark text-white' : 'bg-light text-dark'}>           
             <Navbar style={{backgroundColor: darkTheme ? '#323b30' : '#63916e'}} data-bs-theme={darkTheme ? 'dark' : 'light'} >
                 <Container>
-                    <Navbar.Brand href="/" style={{ color: darkTheme ? '#89a394' : '#a9dfbf' }}>
+                    <Navbar.Brand href="/" style={{ color: darkTheme ? '#a9dfbf' : '#3d4741' }}>
                         Bucket List
                     </Navbar.Brand>
                     <Nav className="me-auto">

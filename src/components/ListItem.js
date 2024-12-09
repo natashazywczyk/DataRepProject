@@ -28,12 +28,13 @@ const ListItem = (props) =>
       
     return (
         <div>
-          <Card>
+          <div className="container w-50 mt-6">
+          <Card style={{ backgroundColor: '#ebead3' }}>
             <Card.Body>
               <blockquote className="blockquote mb-0">
                 <header className="libre-baskerville-bold">{props.mywishes.title}</header>
                 <img src={props.mywishes.picture} alt={props.mywishes.title} //Makes Image change with div
-                  style={{ maxWidth: '25%', height: 'auto' }} //Adjust size if needed 
+                  style={{ maxWidth: '40%', height: 'auto' }} //Adjust size if needed 
                   />
                 <footer style={{ fontSize: '15px' }}>{props.mywishes.dateAdd}</footer>
                 <p>{props.mywishes.desc}</p>
@@ -44,6 +45,7 @@ const ListItem = (props) =>
               </blockquote>
             </Card.Body>  
           </Card>
+        </div>
         </div>
       );
 }

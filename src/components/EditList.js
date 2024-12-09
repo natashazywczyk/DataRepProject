@@ -41,7 +41,7 @@ export default function EditList(props) {
             console.log(res.data);
     
             //Go to read after editing wish
-            navigate('/read');
+            navigate('/main');
         });
     }
 

@@ -36,7 +36,9 @@ const ListItem = (props) =>
                 <p>{props.mywishes.desc}</p>
                 <Button className = "btn btn-danger" onClick = {handleDelete}>Delete</Button> {/*Delete item using delete handler function when button clicked*/}
               </blockquote>
-            </Card.Body>      
+            </Card.Body>  
+            <Link to={"/editlist/" + props.mywishes._id} className="btn btn-primary">Edit</Link>
+           <Button className = "btn btn-danger" onClick = {handleDelete}>Delete</Button> {/*Delete item using delete handler function when button clicked*/}     
           </Card>
         </div>
       );

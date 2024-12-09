@@ -68,7 +68,7 @@ app.put('/api/wishes/:id', async (req, res) => {
     res.send(wish);
 })
 
-//Handles the wish deletion, server side
+//Handles the movie deletion, server side
 app.delete('/api/wishes/:id', async (req, res) =>
 {
     console.log('Deleting wish, ID: ', req.params.id);

@@ -72,7 +72,7 @@ const Ideas = () => {
               <div className="p-3 d-flex flex-column justify-content-center align-items-center" style={{ backgroundColor: 'transparent' }}>
                 <h5>Planning on Going Abroad?</h5>
                 <p>Or perhaps even a staycation? You can plan it all here, the landmarks you want to travel to, the resturants you want to visit or the activies you plan to do.
-                  It could be the next city over, or halfway across the world, you can still plan your possible future trip, and edit as you lose in terest in some ideas,
+                  It could be the next city over, or halfway across the world, you can still plan your possible future trip, and edit as you lose interest in some ideas,
                   or have more to add.
                 </p>
               </div>
@@ -86,6 +86,9 @@ const Ideas = () => {
             <div className="col-md-6 d-flex">
               <div className="p-3 d-flex flex-column justify-content-center align-items-center" style={{ backgroundColor: 'transparent' }}>
                 <h5>Any Shows or Movies that Have Caught your Attention?</h5>
+                <p>Did you see an advertisement for a new show/movie or did a friend recommend one? You can add that to your bucket list so you don't forget to give it a watch
+                  at a later time. You can add a quick synopsis to remind yourself the basis of the show/movie if you leave it for longer than expected.
+                </p>
               </div>
             </div>
             <div className="col-md-6">

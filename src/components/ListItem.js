@@ -31,7 +31,10 @@ const ListItem = (props) =>
           <Card>
             <Card.Body>
               <blockquote className="blockquote mb-0">
-                <img src={props.mywishes.picture} alt={props.mywishes.title} />
+                <header>{props.mywishes.title}</header>
+                <img src={props.mywishes.picture} alt={props.mywishes.title} //Makes Image change with div
+                  style={{ maxWidth: '25%', height: 'auto' }} //Adjust size if needed 
+                  />
                 <footer>{props.mywishes.dateAdd}</footer>
                 <p>{props.mywishes.desc}</p>
                 <Link to={"/editlist/" + props.mywishes._id} className="btn btn-success" style={{ color: '#a9dfbf' }}>Edit</Link>

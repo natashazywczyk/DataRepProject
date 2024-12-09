@@ -5,7 +5,7 @@ const Home = () => {
     <div>
         {/*Add Homepage content here, introduce app and its use*/}
         <h1 className="libre-baskerville-bold">Welcome!</h1>
-        <h3>This is my Bucket List App!</h3>
+        <h3 className="libre-baskerville-bold">This is my Bucket List App!</h3>
 
         <br></br>
         

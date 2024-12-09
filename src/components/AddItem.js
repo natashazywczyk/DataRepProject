@@ -21,6 +21,8 @@ const AddItem = () => {
     return (
         <div>
           <h2 className="libre-baskerville-bold">Create a wish to add to your bucket list!</h2>
+          <br></br>
+          <div className="container w-50 mt-6">
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label>Add Wish Title: </label>
@@ -40,10 +42,11 @@ const AddItem = () => {
               </div>
               <div className="form-group">
                 <label>Add Wish Description: </label>
-                  <input type="text"
+                  <textarea
                     className="form-control"
                     value={desc}
                     onChange={(e) => { setDescription(e.target.value) }}
+                    rows = "5"
                   />
               </div>
               <div className="form-group">
@@ -59,6 +62,7 @@ const AddItem = () => {
                 </div>
               </form>
           </div>
+        </div>
       );
 }
 

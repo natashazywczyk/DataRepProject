@@ -34,10 +34,11 @@ const ListItem = (props) =>
                 <img src={props.mywishes.picture} alt={props.mywishes.title} />
                 <footer>{props.mywishes.dateAdd}</footer>
                 <p>{props.mywishes.desc}</p>
+                <Link to={"/editlist/" + props.mywishes._id} className="btn btn-primary">Edit</Link>
+                <br></br>
                 <Button className = "btn btn-danger" onClick = {handleDelete}>Delete</Button> {/*Delete item using delete handler function when button clicked*/}
               </blockquote>
             </Card.Body>  
-            <Link to={"/editlist/" + props.mywishes._id} className="btn btn-primary">Edit</Link>
           </Card>
         </div>
       );

@@ -26,8 +26,7 @@ const Main = () =>
 
     return(
         <div>
-            <h3>View your wishes below</h3>
-            
+            <h2 className="libre-baskerville-bold">View your wishes below</h2>
 
             <Items mywishes={wishes} ReloadData = {reloadData} /> {/*reload page when item deleted */}
         </div>

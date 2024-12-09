@@ -4,8 +4,8 @@ const Ideas = () => {
   return (
     <div>
         {/*Add potential ideas for user to add*/}
-        <h1>Ideas!</h1>
-        <h4>Below are just a couple of ideas/suggestions of what you could add to your bucket list</h4>
+        <h1 className="libre-baskerville-bold">Ideas!</h1>
+        <h4 className="libre-baskerville-bold">Below are just a couple of ideas/suggestions of what you could add to your bucket list</h4>
 
         <div className="container mt-5">
           <div className="row mb-3">
@@ -22,7 +22,7 @@ const Ideas = () => {
             </div>
             <div className="col-md-6 d-flex">
               <div className="p-3 d-flex flex-column justify-content-center align-items-center" style={{ backgroundColor: 'transparent' }} >
-                <h5>Have You Ever Thought of a Hiking Trail?</h5>
+                <h5 className="libre-baskerville-bold">Have You Ever Thought of a Hiking Trail?</h5>
                 <p>Has there ever been a place you would love to hike in? Well, there you go! That's an idea you can add to your bucket list. Whether it is somewhere local or abroad, 
                   you can easily add it as something you can/aim to do in the future. You don't have to add something crazy far away for it to valid as a wish to achieve.
                 </p>
@@ -36,7 +36,7 @@ const Ideas = () => {
             {/* Row 2 */}
             <div className="col-md-6 d-flex">
               <div className="p-3 d-flex flex-column justify-content-center align-items-center" style={{ backgroundColor: 'transparent' }}>
-                <h5>Wanting to Try New Foods?</h5>
+                <h5 className="libre-baskerville-bold">Wanting to Try New Foods?</h5>
                 <p>Are there any new foods that you would just love to have the experience of trying? Exotic foods, new dishes, obscure fruit or vegetables? Add them to the list!
                   They could be food/dishes you could put together at home but haven't gotten around to it yet, or some harder-to-obtain dishes that may be native to a country/contenient.
                 </p>
@@ -70,7 +70,7 @@ const Ideas = () => {
             </div>
             <div className="col-md-6 d-flex">
               <div className="p-3 d-flex flex-column justify-content-center align-items-center" style={{ backgroundColor: 'transparent' }}>
-                <h5>Planning on Going Abroad?</h5>
+                <h5 className="libre-baskerville-bold">Planning on Going Abroad?</h5>
                 <p>Or perhaps even a staycation? You can plan it all here, the landmarks you want to travel to, the resturants you want to visit or the activies you plan to do.
                   It could be the next city over, or halfway across the world, you can still plan your possible future trip, and edit as you lose interest in some ideas,
                   or have more to add.
@@ -85,7 +85,7 @@ const Ideas = () => {
             {/* Row 4 */}
             <div className="col-md-6 d-flex">
               <div className="p-3 d-flex flex-column justify-content-center align-items-center" style={{ backgroundColor: 'transparent' }}>
-                <h5>Any Shows or Movies that Have Caught your Attention?</h5>
+                <h5 className="libre-baskerville-bold">Any Shows or Movies that Have Caught your Attention?</h5>
                 <p>Did you see an advertisement for a new show/movie or did a friend recommend one? You can add that to your bucket list so you don't forget to give it a watch
                   at a later time. You can add a quick synopsis to remind yourself the basis of the show/movie if you leave it for longer than expected.
                 </p>

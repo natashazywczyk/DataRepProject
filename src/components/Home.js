@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
         {/*Add Homepage content here, introduce app and its use*/}
-        <h1>Welcome!</h1>
+        <h1 className="libre-baskerville-bold">Welcome!</h1>
         <h3>This is my Bucket List App!</h3>
 
         <br></br>

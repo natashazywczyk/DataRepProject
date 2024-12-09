@@ -20,7 +20,7 @@ const AddItem = () => {
 
     return (
         <div>
-          <h3>Create a wish to add to your bucket list!</h3>
+          <h2 className="libre-baskerville-bold">Create a wish to add to your bucket list!</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label>Add Wish Title: </label>

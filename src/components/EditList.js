@@ -49,6 +49,7 @@ export default function EditList(props) {
     return (
         <div>
             <h3>Edit a wish on your bucket list</h3>
+            <div className="container w-50 mt-6">
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Wish Title: </label>
@@ -82,6 +83,7 @@ export default function EditList(props) {
                     <input type="submit" value="Edit Wish" className="btn btn-success" style={{ color: '#a9dfbf' }} />
                 </div>
             </form>
+        </div>
         </div>
     );
 }

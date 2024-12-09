@@ -30,6 +30,7 @@ const AddItem = () => {
                     className="form-control"
                     value={title}
                     onChange={(e) => { setTitle(e.target.value) }}
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} 
                   />
               </div>
               <div className="form-group">
@@ -38,6 +39,7 @@ const AddItem = () => {
                     className="form-control"
                     value={dateAdd}
                     onChange={(e) => { setDateAdd(e.target.value) }}
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} 
                   />
               </div>
               <div className="form-group">
@@ -46,6 +48,7 @@ const AddItem = () => {
                     className="form-control"
                     value={desc}
                     onChange={(e) => { setDescription(e.target.value) }}
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} 
                     rows = "5"
                   />
               </div>
@@ -55,6 +58,7 @@ const AddItem = () => {
                     className="form-control"
                     value={picture}
                     onChange={(e) => { setPicture(e.target.value) }}
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287' }} 
                   />
                 </div>
                 <br></br>

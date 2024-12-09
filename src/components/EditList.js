@@ -56,28 +56,32 @@ export default function EditList(props) {
                     <input type="text" 
                     className="form-control" 
                     value={title} 
-                    onChange={(e) => setTitle(e.target.value)} />
+                    onChange={(e) => setTitle(e.target.value)}
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} />
                 </div>
                 <div className="form-group">
                     <label>Date Added: </label>
                     <input type="text" 
                     className="form-control" 
                     value={dateAdd} 
-                    onChange={(e) => setDateAdd(e.target.value)} />
+                    onChange={(e) => setDateAdd(e.target.value)} 
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} />
                 </div>
                 <div className="form-group">
                     <label>Description: </label>
                     <input type="text" 
                     className="form-control" 
                     value={desc} 
-                    onChange={(e) => setDescription(e.target.value)} />
+                    onChange={(e) => setDescription(e.target.value)} 
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} />
                 </div>
                 <div className="form-group">
                     <label>Picture URL: </label>
                     <input type="text" 
                     className="form-control" 
                     value={picture} 
-                    onChange={(e) => setPicture(e.target.value)} />
+                    onChange={(e) => setPicture(e.target.value)} 
+                    style={{ backgroundColor: '#ebead3', border: '1px solid #a3a287'  }} />
                 </div>
                 <div className="form-group">
                     <input type="submit" value="Edit Wish" className="btn btn-success" style={{ color: '#a9dfbf' }} />

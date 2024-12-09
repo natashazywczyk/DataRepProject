@@ -79,7 +79,7 @@ export default function EditList(props) {
                     onChange={(e) => setPicture(e.target.value)} />
                 </div>
                 <div className="form-group">
-                    <input type="submit" value="Edit Wish" className="btn btn-primary" />
+                    <input type="submit" value="Edit Wish" className="btn btn-success" style={{ color: '#a9dfbf' }} />
                 </div>
             </form>
         </div>

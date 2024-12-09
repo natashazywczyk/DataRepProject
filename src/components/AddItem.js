@@ -54,8 +54,8 @@ const AddItem = () => {
                     onChange={(e) => { setPicture(e.target.value) }}
                   />
                 </div>
-                <div>
-                  <input type="submit" value="Add Movie"></input>
+                <div className="form-group">
+                    <input type="submit" value="Add Wish" className="btn btn-primary" />
                 </div>
               </form>
           </div>
